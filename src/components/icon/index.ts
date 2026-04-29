@@ -1,0 +1,1 @@
+export { HondurasIcon } from './icons/HondurasIcon';
