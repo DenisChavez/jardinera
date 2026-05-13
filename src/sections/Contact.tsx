@@ -86,9 +86,14 @@ export const Contact = () => {
                 <img src="/src/assets/img/men-arreglo.png" alt="hombre con arreglo" className="men-flower" />
             </div>
             <div className="contact-icons position">
-                <Facebook className="container-icon" />
-                <Instagram className="container-icon" />
-                <TikTok className="container-icon" />
+                <a href="https://www.facebook.com/profile.php?id=61588983034930" target="_blank" rel="noopener noreferrer">
+                    <Facebook className="container-icon" />
+                </a>
+                <a href="https://www.instagram.com/lajardinera.life/" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="container-icon" />
+                </a>
+
+                {/* <TikTok className="container-icon" /> */}
             </div>
         </section>
     )

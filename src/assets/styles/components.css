@@ -32,7 +32,7 @@
 }
 .header .icon-honduras{
     object-fit: cover;
-    width: 56px;
+    width: 60px;
     height: auto;
 }
 .header .options{
@@ -49,6 +49,38 @@
 .header .options a:hover{
     opacity: 0.8;
 }
+.dropdown-menu {
+    justify-content: start;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.dropdown-menu.show {
+    transform: translateX(0);
+}
+.dropdown-menu.show a{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    align-self: flex-end;
+    margin: 1rem;
+    cursor: pointer;
+}
+
 .hero{
     position: relative;
     height: 100vh;

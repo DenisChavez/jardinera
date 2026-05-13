@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Burger } from "../components/icon/icons/Burger";
-import { Facebook } from "../components/icon/icons/Facebook";
+import { DropdownMenu } from "../components/dropdown/DropdownMenu";
 
 export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
-
+    const [visible, setVisible] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 0);
@@ -22,8 +22,9 @@ export const Header = () => {
                 <a href="#esa-ocasion">para esa ocasión</a>
                 <a href="#tu-arreglo">elige tu arreglo</a>
                 <a href="#contacto">contáctanos</a>
-                <Burger />
+                <Burger onClick={() => setVisible(!visible)} />
             </div>
+            <DropdownMenu onClose={() => setVisible(false)} visible={visible} />
         </div>
     )
 };
