@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Facebook } from "../components/icon/icons/Facebook";
 import { Instagram } from "../components/icon/icons/Instagram";
-import { TikTok } from "../components/icon/icons/TikTok";
 
 export const Contact = () => {
     const [formData, setFormData] = useState({

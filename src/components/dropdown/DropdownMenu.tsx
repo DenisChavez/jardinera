@@ -1,4 +1,9 @@
-export const DropdownMenu = ({ visible, onClose }) => {
+type DropdownMenuProps = {
+    visible: boolean,
+    onClose: () => void;
+}
+
+export const DropdownMenu = ({ visible, onClose }: DropdownMenuProps) => {
 
     return (
         <div className={`dropdown-menu position flex-column ${visible ? "show" : ""}`}>

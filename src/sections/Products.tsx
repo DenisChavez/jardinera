@@ -5,7 +5,7 @@ import { CardsData } from "../data/cards";
 export const Products = () => {
     const [cantidadCards, setCantidadCards] = useState(1);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const intervalRef = useRef(null);
+    const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
     useEffect(() => {
         const handleResize = () => {

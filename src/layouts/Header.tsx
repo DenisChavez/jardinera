@@ -22,7 +22,7 @@ export const Header = () => {
                 <a href="#esa-ocasion">para esa ocasión</a>
                 <a href="#tu-arreglo">elige tu arreglo</a>
                 <a href="#contacto">contáctanos</a>
-                <Burger onClick={() => setVisible(!visible)} />
+                <Burger onClick={() => setVisible(!visible)} className="icon-buger" />
             </div>
             <DropdownMenu onClose={() => setVisible(false)} visible={visible} />
         </div>

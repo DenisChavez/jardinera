@@ -35,6 +35,9 @@
     width: 60px;
     height: auto;
 }
+.header .icon-buger{
+    cursor: pointer;
+}
 .header .options{
     display: flex;
     gap: 20px;
@@ -57,7 +60,7 @@
     right: 0;
     width: 50%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
 
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
