@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Burger } from "../components/icon/icons/Burger";
 import { DropdownMenu } from "../components/dropdown/DropdownMenu";
+import HondurasIcon from "../assets/img/Honduras.jpg"
 
 export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -17,7 +18,7 @@ export const Header = () => {
 
     return (
         <div className={`header flex ${scrolled ? "scroll" : ""}`}>
-            <img src="/src/assets/img/Honduras.jpg" alt="bandera honduras" className="icon-honduras" />
+            <img src={HondurasIcon} alt="bandera honduras" className="icon-honduras" />
             <div className="options">
                 <a href="#esa-ocasion">para esa ocasión</a>
                 <a href="#tu-arreglo">elige tu arreglo</a>

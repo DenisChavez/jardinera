@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Facebook } from "../components/icon/icons/Facebook";
 import { Instagram } from "../components/icon/icons/Instagram";
+import heroTulipanes from "../assets/img/hero-tulipanes.png"
+import menArreglo from "../assets/img/men-arreglo.png"
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
@@ -49,7 +51,7 @@ export const Contact = () => {
 
     return (
         <section id="contacto" className="contact">
-            <img src="/src/assets/img/hero-tulipanes.png" alt="Imagen tulipanes" className="banner-flower"></img>
+            <img src={heroTulipanes} alt="Imagen tulipanes" className="banner-flower"></img>
             <div className="contact-info">
                 <div className="contact-form p-absolute">
                     <form onSubmit={handleSubmit}>
@@ -82,7 +84,7 @@ export const Contact = () => {
                     <p>TE AYUDAMOS A ELEGIR</p>
                 </div>
                 <p className="contact-description p-absolute">En <strong>la jardinera®</strong> ayudamos a los hombres a expresar con flores lo que sienten por la mujer que aman, quieren o admiran. Diseñamos arreglos diferentes con intención, emoción y significado</p>
-                <img src="/src/assets/img/men-arreglo.png" alt="hombre con arreglo" className="men-flower" />
+                <img src={menArreglo} alt="hombre con arreglo" className="men-flower" />
             </div>
             <div className="contact-icons position">
                 <a href="https://www.facebook.com/profile.php?id=61588983034930" target="_blank" rel="noopener noreferrer">
