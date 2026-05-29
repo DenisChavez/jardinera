@@ -23,10 +23,8 @@ export const Products = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    // 🔢 Límite de movimiento
     const maxIndex = CardsData.length - cantidadCards;
 
-    // 🔁 Autoplay
     const startAutoPlay = () => {
         if (intervalRef.current) clearInterval(intervalRef.current);
 
@@ -45,7 +43,6 @@ export const Products = () => {
         };
     }, [maxIndex]);
 
-    // 🛠️ Ajuste si cambia el tamaño de pantalla
     useEffect(() => {
         if (currentIndex > maxIndex) {
             setCurrentIndex(0);
@@ -64,7 +61,7 @@ export const Products = () => {
                     }}
                 >
                     {CardsData.map((card) => (
-                        <Card key={card.text} card={card} />
+                        <Card key={card.descripcion} card={card} />
                     ))}
                 </div>
 
