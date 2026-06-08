@@ -11,6 +11,12 @@
     justify-content: center;
     align-items: center;
 }
+.position-a{
+    position: absolute;
+}
+.position-r{
+    position: relative;
+}
 .position{
     top: 50%;
     left: 50%;
@@ -86,20 +92,24 @@
 }
 
 .hero{
-    position: relative;
     height: 100vh;
-    background-image: url("../img/hero-jardinera-2.jpeg");
-    background-size: cover;
+}
+.hero .bg-jardinera{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
 }
 .hero .icon-jardinera{
-    position: absolute;
-    width: 36%;
-    height: 36%;
+    width: 38%;
+    height: 38%;
     top: 12%;
+    z-index: 2;
 }
 .hero .title{
-    width: 40%;
-    /* left: 5%; */
+    width: 50%;
+    z-index: 4;
+    top: 35%;
     color: #ffffff;
     text-align: center;
     font-size: 1.3rem;
@@ -108,6 +118,7 @@
 }
 .hero .container-icon{
     position: absolute;
+    z-index: 5;
     top: 86%;
     left: 78%;
     gap: 10px;
@@ -135,14 +146,25 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.9;
+}
+.eslogan .modal{
+    position: absolute;
+    opacity: 0.4;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
 }
 .eslogan p{
-    width: 70%;
+    width: 60%;
     color: #ffffff;
     margin: 0;
     font-size: 1.5rem;
     z-index: 1000;
     text-align: center;
+}
+.eslogan p > span{
+    color: #f296b5;
 }
 .carrousel-products{
     font-family: 'Times New Roman', Times, serif;
@@ -218,10 +240,10 @@
     background-color: white;
     overflow: hidden;
 }
-.contact .banner-flower{
+.contact .banner-cintillo{
     object-fit: cover;
     width: 100%;
-    height: 14vh;
+    height: 11vh;
 }
 .contact .contact-info{
     margin-top: 30px;
@@ -324,6 +346,9 @@
     .eslogan p {
         color: #5E7A03;
     }
+    .eslogan .modal{
+        display: none;
+    }
     .carrousel-products{
         padding: 0 20px;
     }
@@ -354,21 +379,13 @@
         left: 16%;
     }
     .hero .title{
-        width: 20%;
-        position: absolute;
-        top: 24%;
-        left: 56%;
-        transform: translateX(-50%, -50%);
+        width: 25%;
+        top: 30%;
+        left: 70%;
     }
     .hero .container-icon{
         top: 80%;
         left: 80%;
-    }
-    .eslogan .parragraphs p{
-        font-size: 1.7rem;
-    }
-    .eslogan .parragraphs p:nth-child(1){
-        padding: 4px 20px;
     }
     .carrousel-viewport{
         max-width: 75%;
@@ -380,7 +397,7 @@
     .carrousel-track > * {
         min-width: 25%;
     }
-    .contact .banner-flower{
+    .contact .banner-cintillo{
         height: 30vh;
     }
     .contact .p-absolute{

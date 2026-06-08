@@ -6,7 +6,8 @@ export const Eslogan = () => {
             {/* <div className="parragraphs flex-column">
                 <p>VENDEMOS FLORES</p>}
             </div> */}
-            <p>CREAMOS LA FORMA MÁS BONITA DE EXPRESARTE CON FLORES</p>
+            <div className="modal"></div>
+            <p>CREAMOS LA FORMA MÁS BONITA PARA <span>EXPRESARTE CON FLORES</span></p>
         </section>
     )
 };

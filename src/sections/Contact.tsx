@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Facebook } from "../components/icon/icons/Facebook";
 import { Instagram } from "../components/icon/icons/Instagram";
-import heroTulipanes from "../assets/img/hero-tulipanes.png"
+import cintillo from "../assets/img/cintillo.jpg"
 import menArreglo from "../assets/img/men-arreglo.png"
 
 export const Contact = () => {
@@ -51,7 +51,7 @@ export const Contact = () => {
 
     return (
         <section id="contacto" className="contact">
-            <img src={heroTulipanes} alt="Imagen tulipanes" className="banner-flower"></img>
+            <img src={cintillo} alt="Imagen Cintillo" className="banner-cintillo"></img>
             <div className="contact-info">
                 <div className="contact-form p-absolute">
                     <form onSubmit={handleSubmit}>
