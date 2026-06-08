@@ -3,10 +3,10 @@ export const Eslogan = () => {
     return (
         <section id="esa-ocasion" className="eslogan">
             <img src={menClassic} className="img-eslogan" />
-            <div className="parragraphs flex-column">
-                <p>NO VENDEMOS FLORES</p>
-                <p>VENDEMOS LA FOMRA MÁS BONITA DE EXPRESARTE CON FLORES</p>
-            </div>
+            {/* <div className="parragraphs flex-column">
+                <p>VENDEMOS FLORES</p>}
+            </div> */}
+            <p>CREAMOS LA FORMA MÁS BONITA DE EXPRESARTE CON FLORES</p>
         </section>
     )
 };
