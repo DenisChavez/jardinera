@@ -109,10 +109,10 @@
 .hero .title{
     width: 50%;
     z-index: 4;
-    top: 35%;
+    top: 37%;
     color: #ffffff;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     letter-spacing: 2px;
     line-height: 2rem;
 }
@@ -156,7 +156,7 @@
     height: 100%;
 }
 .eslogan p{
-    width: 60%;
+    width: 50%;
     color: #ffffff;
     margin: 0;
     font-size: 1.5rem;
@@ -175,7 +175,7 @@
 }
 .carrousel-viewport{
     width: 100%;
-    max-width: 280px;
+    max-width: 250px;
     overflow: hidden;
     touch-action: pan-y;
 }
@@ -210,7 +210,6 @@
     box-sizing: border-box;
 }
 .card > img{
-    width: 92%;
     height: 240px;
     border-radius: 10px;
 }
@@ -398,12 +397,12 @@
         min-width: 25%;
     }
     .contact .banner-cintillo{
-        height: 30vh;
+        height: 25vh;
     }
     .contact .p-absolute{
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 57%;
         transform: translate(-50%, -50%);
     }
     .contact .contact-form{
@@ -422,7 +421,7 @@
     }
     .contact .contact-icons{
         flex-direction: row;
-        top: 40%;
+        top: 44%;
         left: 87%;
     }
 }
