@@ -156,10 +156,10 @@
     height: 100%;
 }
 .eslogan p{
-    width: 50%;
+    width: 26%;
     color: #ffffff;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     z-index: 1000;
     text-align: center;
 }
@@ -397,7 +397,7 @@
         min-width: 25%;
     }
     .contact .banner-cintillo{
-        height: 25vh;
+        height: 34vh;
     }
     .contact .p-absolute{
         position: absolute;
