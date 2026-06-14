@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Facebook } from "../components/icon/icons/Facebook";
 import { Instagram } from "../components/icon/icons/Instagram";
 import cintillo from "../assets/img/cintillo.jpg"
-import menArreglo from "../assets/img/men-arreglo.png"
+import womenArreglo from "../assets/img/w-arreglo1.jpg"
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
@@ -84,7 +84,7 @@ export const Contact = () => {
                     <p>TE AYUDAMOS A ELEGIR</p>
                 </div>
                 <p className="contact-description p-absolute">En <strong>la jardinera®</strong> ayudamos a los hombres a expresar con flores lo que sienten por la mujer que aman, quieren o admiran. Diseñamos arreglos diferentes con intención, emoción y significado</p>
-                <img src={menArreglo} alt="hombre con arreglo" className="men-flower" />
+                <img src={womenArreglo} alt="hombre con arreglo" className="men-flower" />
             </div>
             <div className="contact-icons position">
                 <a href="https://www.facebook.com/profile.php?id=61588983034930" target="_blank" rel="noopener noreferrer">

@@ -134,33 +134,26 @@
 }
 .eslogan{
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     background-color: #ffffff;
     margin-bottom: 14px;
 }
 .eslogan .img-eslogan{
-    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.9;
 }
 .eslogan .modal{
-    position: absolute;
-    opacity: 0.4;
+    opacity: 0.2;
     background-color: #000;
     width: 100%;
     height: 100%;
 }
-.eslogan p{
-    width: 26%;
+.eslogan .frase{
+    top: 26%;
+    width: 30%;
     color: #ffffff;
-    margin: 0;
-    font-size: 1.1rem;
-    z-index: 1000;
+    font-size: 1.3rem;
     text-align: center;
 }
 .eslogan p > span{
@@ -176,7 +169,7 @@
 .carrousel-viewport{
     width: 100%;
     max-width: 250px;
-    overflow: hidden;
+    /* overflow: hidden; */
     touch-action: pan-y;
 }
 .carrousel-track, .circles{
@@ -242,7 +235,7 @@
 .contact .banner-cintillo{
     object-fit: cover;
     width: 100%;
-    height: 11vh;
+    height: 12vh;
 }
 .contact .contact-info{
     margin-top: 30px;
@@ -295,14 +288,13 @@
 }
 .contact .men-flower{
     width: 100%;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
 }
 .contact .contact-icons{
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    top: 66%;
+    top: 60%;
     left: 85%;
 }
 .footer{
@@ -334,16 +326,16 @@
         line-height: 3.5rem;
     }
     .eslogan {
-        position: static;
         height: 80vh;
-        flex-direction: row;
     }
     .eslogan .img-eslogan {
-        position: static;
-        width: 60vw; 
+        width: 50vw; 
     }
-    .eslogan p {
+    .eslogan .frase{
+        font-size: 1.5rem;
         color: #5E7A03;
+        top: 45%;
+        left: 75%;
     }
     .eslogan .modal{
         display: none;
@@ -361,12 +353,16 @@
         width: 14px;
         height: 14px;
     }
+    .contact .banner-cintillo{
+        height: 22vh;
+    }
     .contact .men-flower{
-        width: 50%;
+        width: 40%;
     }
     .contact .contact-icons{
+        flex-direction: row;
         gap: 20px;
-        top: 64%;
+        top: 60%;
         left: 80%;
     }
 }
