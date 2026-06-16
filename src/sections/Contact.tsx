@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Facebook } from "../components/icon/icons/Facebook";
 import { Instagram } from "../components/icon/icons/Instagram";
 import cintillo from "../assets/img/cintillo.jpg"
-import womenArreglo from "../assets/img/w-arreglo1.jpg"
+import womenArreglo1 from "../assets/img/w-arreglo1.jpg"
+import womenArreglo2 from "../assets/img/w-arreglo2.jpg"
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
@@ -81,10 +82,17 @@ export const Contact = () => {
                             Enviar
                         </button>
                     </form>
-                    <p>TE AYUDAMOS A ELEGIR</p>
+                    <p className="form-text">TE AYUDAMOS A ELEGIR</p>
                 </div>
-                <p className="contact-description p-absolute">En <strong>la jardinera®</strong> ayudamos a los hombres a expresar con flores lo que sienten por la mujer que aman, quieren o admiran. Diseñamos arreglos diferentes con intención, emoción y significado</p>
-                <img src={womenArreglo} alt="hombre con arreglo" className="men-flower" />
+                <p className="contact-description p-absolute">En <strong>la jardinera®</strong> ayudamos a los hombres a expresar con flores lo que sienten por la mujer que aman, quieren o admiran. <br /> <br />  Diseñamos arreglos diferentes con intención, emoción y significado</p>
+                <picture>
+                    <source media="(min-width: 768px)" srcSet={womenArreglo1} />
+                    <img
+                        src={womenArreglo2}
+                        alt="hombre con arreglo"
+                        className="men-flower"
+                    />
+                </picture>
             </div>
             <div className="contact-icons position">
                 <a href="https://www.facebook.com/profile.php?id=61588983034930" target="_blank" rel="noopener noreferrer">
@@ -96,6 +104,6 @@ export const Contact = () => {
 
                 {/* <TikTok className="container-icon" /> */}
             </div>
-        </section>
+        </section >
     )
 };
