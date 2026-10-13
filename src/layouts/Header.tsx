@@ -6,6 +6,7 @@ import HondurasIcon from "../assets/img/Honduras.jpg"
 export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [visible, setVisible] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 0);
