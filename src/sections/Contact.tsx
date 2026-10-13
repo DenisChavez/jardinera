@@ -21,7 +21,7 @@ export const Contact = () => {
         e.preventDefault();
 
         try {
-            const res = await fetch("http://localhost:3001/send-email", {
+            const res = await fetch("/api/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -62,7 +62,7 @@ export const Contact = () => {
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-
+                            required
                         />
                         <input
                             type="email"
@@ -70,6 +70,7 @@ export const Contact = () => {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
+                            required
                         />
                         <textarea
                             placeholder="mensaje/message"
@@ -77,6 +78,7 @@ export const Contact = () => {
                             rows={4}
                             value={formData.message}
                             onChange={handleChange}
+                            required
                         />
                         <button type="submit">
                             Enviar
